@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./style.css"><!--THIS LINE IS IMPORTANT-->
+</head>
+<body>
+    <div class="form-container">
+        <h1>Create  Account</h1>
+        <p class="Subtitle">Join us today.All fields marked are recquired.</p>
+    <form action="#" method="post">
+        <!--First row and last row-->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstname" >Firstname</label>
+                <input type="text" id="firstname" name="firstname" recquired autocomplete="given-name">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname" recquired autocomplete="familyname">            
+            </div>
+        </div>
+        <!--Email-->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email"> 
+        </div>
+        <!--Passwords-->
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="Password" id="Password" name="Password" recquired min-length= "8" autocomplete="Password">
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" recquired autocomplete="bday">
+            </div>
+            <div class="form-group">
+                <label for="phone">phone</label>
+                <input type="number" id="phone" name="phone" recquired autocomplete="tel">
+
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" recquired autocomplete="country">
+                <option value="">Select country</option>
+                <option value="CM">Cameroon</option>
+                <option value="UK">united kingdom</option>
+                <option value="FR">France</option>
+                <option value="CA">Canada</option>
+                <option value="US">United states</option>
+                </select>
+
+            </div>
+            <!--Account type-->
+            <div class="form-group">
+                <label>Account type</label>
+                <div class="radio-group">
+                    <input type="radio" id="personal" name="accountType" value="personal"recquired>
+                    <label for="personal">Personal</label>
+                    <input type="radio" id="business" name="accountType" value="business">
+                    <label for="business">Business</label>
+                </div>
+            </div>
+            <!--Terms-->
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" recquird>
+                <label for="terms">I aggree to the terms and conditions</label>
+             </div>
+             <!--Buttons-->
+             <div class="button-group">
+                <button type="submit" class="btn-register">Register</button>
+                <button type="reset" class="btn-reset">Reset</button>
+
+             </div><!--Close this-->
+    </form>
+
+    </div>
+</body>
+</html>
